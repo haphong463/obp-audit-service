@@ -75,6 +75,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>obp-audit-service</finalName>
 	</build>
 
 </project>
