@@ -1,0 +1,16 @@
+server:
+  port: 9922
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: online_banking_audit_db
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:29092
+      group-id: notification-service-group
+      auto-offset-reset: latest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
